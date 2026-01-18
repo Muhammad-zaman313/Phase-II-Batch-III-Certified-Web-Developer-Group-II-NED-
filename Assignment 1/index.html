@@ -22,13 +22,9 @@
 
     form {
       background: blue;
-      padding: 20px;
-      margin: 10px;
       color: #fff;
-    }
-
-    td {
-      padding: 5px;
+      margin: 5px 10px;
+      padding: 5px 10px;
     }
   </style>
 </head>
@@ -38,7 +34,7 @@
 
   <form aria-label="student Registration Form">
 
-    <table border="1">
+    <table>
       <tr>
         <td> <label for="rname">FIRST NAME</label></td>
         <td colspan="3"><input type="text" name="firstname" id="fname" required>
@@ -223,84 +219,85 @@
           <input type="text">
         </td>
       </tr>
-      <tr>
-        <th>QUALIFICATIONS:</th>
-      </tr>
-      <tr>
-        <th>S.No. </th>
-        <th>Examination</th>
-        <th>Board</th>
-        <th>Percentage</th>
-        <th>Year of passing</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Class IX</td>
-        <td><input type="text"></td>
-        <td><input type="text"></td>
-        <td><input type="text"></td>
-      </tr>
-      <tr>
+      <table>
+        <tr>
+          <th><label for="">QUALIFICATION</label></th>
+          <th>S.No.</th>
+          <th>Examination</th>
+          <th>Board</th>
+          <th>Percentage</th>
+          <th>Year of passing</th>
+        </tr>
+        <tr class="center">
+          <td rowspan="4"></td>
+          <td>1</td>
+          <td>Class IX</td>
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr class="center">
+          <td>2</td>
+          <td>Class X</td>
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr class="center">
 
-        <td>2</td>
-        <td>Class X</td>
-        <td><input type="text"></td>
-        <td><input type="text"></td>
-        <td><input type="text"></td>
-      </tr>
-      <tr>
+          <td>3</td>
+          <td>Class XI</td>
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr class="center">
 
-        <td>3</td>
-        <td>Class XI</td>
-        <td><input type="text"></td>
-        <td><input type="text"></td>
-        <td><input type="text"></td>
-      </tr>
-      <tr>
+          <td>4</td>
+          <td>Class XII</td>
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr class="center">
+          <td colspan="3"></td>
+          <td>
+            <small>
+              (Min primary class)
+            </small>
+          </td>
+          <td>
+            <small>
+              ( Min 40% Percentage)
+            </small>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <label for="">APPLIED FOR</label>
+            <label for="">BCA</label>
+            <input type="radio">
 
-        <td>4</td>
-        <td>Class XII</td>
-        <td><input type="text"></td>
-        <td><input type="text"></td>
-        <td><input type="text"></td>
-      </tr>
-      <tr>
-        <td colspan="2"></td>
-        <td>
-          <small>
-            (Min primary class)
-          </small>
-        </td>
-        <td>
-          <small>
-            ( Min 40% Percentage)
-          </small>
-        </td>
-      </tr>
+            <label for="">B.Com</label>
+            <input type="radio">
 
-      <tr>
-        <td colspan="4">
-          <label for="">APPLIED FOR</label>
-          <label for="">BCA</label>
-          <input type="radio">
+            <label for="">M.A</label>
+            <input type="radio">
 
-          <label for="">B.Com</label>
-          <input type="radio">
+            <label for="">B.A</label>
+            <input type="radio">
 
-          <label for="">M.A</label>
-          <input type="radio">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="5" align="center">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </td>
+        </tr>
+      </table>
 
-          <label for="">B.A</label>
-          <input type="radio">
 
-        </td>
-      </tr>
-      <tr>
-        <td colspan="4" align="center">
-          <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
-        </td>
-      </tr>
     </table>
 
   </form>
