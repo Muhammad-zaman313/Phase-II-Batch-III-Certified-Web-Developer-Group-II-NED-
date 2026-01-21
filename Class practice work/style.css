@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+}
+
+/* =====  Navbar ==== */
+
+
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("image/food-chocolate-brown-bakery-background_1036998-1526.avif");
+}
+
+#logo {
+  color: #4d1515;
+  background: #f8f6f6;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.navbar {
+  background: #4d1515;
+  width: 100%;
+  padding: 20px;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+
+}
+
+.nav-menu {
+  width: 60%;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav-menu a:hover {
+  color: #c9a2a2;
+  border-bottom: 2px solid;
+  transition: all 0.3s ease-in-out;
+}
+
+/* =====  Lead  ===== */
+.lead {
+  background: rgba(201, 162, 162, 0.85);
+  padding: 50px;
+  border-radius: 20px;
+  opacity: 0.7;
+  text-align: center;
+  max-width: 500px;
+}
+
+#header-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1 {
+  color: #4d1515;
+}
+
+
+.title {
+  color: #4d1515;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+
+/*  ===== Buttton ===== */
+.btn {
+  width: auto;
+  padding: 10px 25px;
+  background: #4d1515;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background: #793636;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
+
+/* ==== List of Items ===== */
+
+.items {
+  background: #f8f6f6;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 20px;
+
+}
+
+.card img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card>img {
+  border-radius: 10px;
+}
+
+.caption {
+  text-align: center;
+  color: #4d1515;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.card:hover {
+  background: #c9a2a2;
+  box-shadow: 4px 8px 16px #f8f6f666;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ============ ABOUT SECTION STYLE ============ */
+
+
+
+
+/*  ====== about features ======*/
+
+#about-headder-section {
+
+  background-image: url("image/cake.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.items-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+.reviews-card {
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 10px 20px;
+  padding: 50px;
+  width: 280px;
+  text-align: center;
+}
+
+.reviews-card dd {
+  color: #555;
+  margin-top: 10px;
+}
+
+.reviews-card dt {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #4d1515;
+}
+
+.reviews-card:hover {
+  background: #c9a2a2;
+  transition: all 0.3s ease-in-out;
+}
+
+.reviews-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+.about-features {
+  background: #ebdbdb;
+  padding: 60px 0;
+}
+
+
+
+
+/* ====== Team Members Table ====== */
+#table-section {
+  padding: 50px;
+  background: #f8f6f6;
+}
+
+table {
+  margin: 0px auto;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.table-row {
+  text-align: center;
+  background-color: #ebdbdb;
+
+}
+
+.table-row:hover {
+  background-color: #c9b6b6;
+}
+
+.table-head {
+  background-color: #4d1515;
+  color: #fff;
+  padding: 10px;
+}
+
+td {
+  padding: 10px 0;
+}
+
+td,
+th {
+  border-bottom: 1px solid #ddd;
+}
+
+.caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* ====== Contact Section Style ===== */
+
+
+#Contact-section {
+  background-color: #f8f6f6;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 0px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1ebeb;
+  width: 40%;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+
+
+/* ======================  FOOTER  ================== */
+.footer {
+  padding: 40px 20px;
+  background-color: #2c1d1d;
+  color: #ffffff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-brand h3 {
+  margin-bottom: 5px;
+  color: #c9a2a2;
+}
+
+.footer-social image {
+  width: 30px;
+  margin: 0 10px;
+
+}
+
+.footer-socials a:hover img {
+  transform: scale(1.2);
+  transition: 0.3s ease;
+}
+
+
+
+/* ====== RESPONSIVE LAYOUT STYLE ===== */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+  }
+  .contact-card {
+    width: 90%;
+  }
+
+  .items {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .hero-content {
+    margin: 20px;
+    padding: 25px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero {
+  height: 100vh;
+  background: url("image/food-chocolate-brown-bakery-background_1036998-1526.avif") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  background: rgba(201, 162, 162, 0.85);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  color: #4d1515;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  margin-bottom: 20px;
+}

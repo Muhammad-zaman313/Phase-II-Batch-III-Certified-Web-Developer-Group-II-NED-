@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="root">
+
+    <header id="about-headder-section">
+      <nav class="navbar">
+        <span><a href="home.html" id="logo">SweetBite Bakery</a></span>
+        <ul class="nav-menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="btn">Order Now</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="Contact-section">
+
+        <form action="" class="contact-card">
+          <h2 class="title">Contact Form</h2>
+          <div class="input-field">
+            <label for="fname">Full Name</label>
+            <input id="fname" type="text" required class="form-control">
+          </div>
+          <div class="input-field">
+            <label for="email">Email</label>
+            <input id="email" type="email" required class="form-control">
+          </div>
+          <div class="input-field">
+            <label for="tel">Phone Number</label>
+            <input id="tel" type="tel" pattern="[0-9] {11}" required class="form-control">
+          </div>
+          <div class="input-field">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" class="form-control"></textarea>
+          </div>
+          <button class="btn form-control">Submit</button>
+
+
+        </form>
+
+
+      </section>
+    </main>
+    <!-- ====== Footer Section ====== -->
+   <footer class="footer">
+      <div class="footer-content">
+
+        <div class="footer-brand">
+          <h3>SweetBite Bakery</h3>
+          <p>Freshly baked with love 🍰</p>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://www.instagram.com" target="_blank"><img src="image/icons8-instagram.gif" alt="instagram"></a>
+          <a href="https://www.whatsapp.com" target="_blank"><img src="image/icons8-whatsapp-logo.gif"
+              alt="whatsapp"></a>
+          <a href="https://www.linkedin.com" target="_blank"><img src="image/icons8-linkedin-48.png" alt="linkdin"></a>
+        </div>
+        <p class="copyright">&copy; 2025 SweetBite Bakery. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>
