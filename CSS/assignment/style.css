@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+/* ===== BALL LAYOUT ===== */
+.allBolls {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  background: #12ca31;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+/* ===== BALL 1 ====== */
+
+#ball-top-left {
+  background: #12ca31;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  animation: moveBall-1;
+  animation-duration: 4s;
+}
+
+@keyframes moveBall-1 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  50% {
+    top: 50vh;
+    left: 50vw;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+
+/* ===== BALL 2 ====== */
+
+#ball-top-center {
+  background: #12ca31;
+  position: absolute;
+  top: 0;
+  left: 50vw;
+
+  animation: moveBall-2;
+  animation-duration: 4s;
+
+
+}
+
+@keyframes moveBall-2 {
+  0% {
+    top: 0;
+    left: 50vw;
+  }
+
+  25% {
+    top: 50vh;
+  }
+
+  100% {
+    top: 0;
+    left: 50vw;
+  }
+
+}
+
+
+/* ===== BALL 3 ====== */
+
+#ball-top-right {
+  background: #12ca31;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  animation: moveBall-3;
+  animation-duration: 4s;
+
+
+}
+
+@keyframes moveBall-3 {
+  0% {
+    top: 0;
+    right: 0;
+  }
+
+  25% {
+    top: 50vh;
+    right: 50vw;
+  }
+
+  100% {
+    top: 0;
+    right: 0;
+  }
+}
+
+/* ===== BALL 4 ===== */
+
+#bal-center-left {
+  background: #12ca31;
+  position: absolute;
+  top: 50vh;
+  left: 0;
+
+  animation: moveBall-4;
+  animation-duration: 4s;
+}
+
+@keyframes moveBall-4 {
+  0% {
+    top: 50vh;
+    left: 0;
+  }
+
+  25% {
+    left: 50vw;
+    top: 50vh;
+  }
+
+  100% {
+    top: 50vh;
+    left: 0;
+  }
+}
+
+/* ===== BOLL 5 ===== */
+
+#ball-center-right {
+
+  background: #12ca31;
+  position: absolute;
+  top: 50vh;
+  right: 0;
+
+
+  animation: moveBall-5;
+  animation-duration: 4s;
+}
+
+@keyframes moveBall-5 {
+  0% {
+    top: 50vh;
+    right: 0;
+  }
+
+  25% {
+    top: 50vh;
+    right: 50vw;
+  }
+}
+
+/* ===== BOLL 6 ===== */
+
+#ball-buttom-left {
+
+  background: #12ca31;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  animation: moveBall-6;
+  animation-duration: 4s;
+
+
+}
+
+@keyframes moveBall-6 {
+ 0%{left: 0; bottom: 0;}
+ 25%{left: 50vw;bottom: 50vh;}
+ 100%{left: 0; bottom: 0;}
+}
+
+/* ===== BOLL 7 ====== */
+
+#ball-buttom-center {
+
+  background: #12ca31;
+  position: absolute;
+  left: 50vw;
+  bottom: 0;
+
+  animation: moveBall-7;
+  animation-duration: 4s;
+}
+
+@keyframes moveBall-7 {
+ 0%{left: 50vw; bottom: 0;}
+ 25%{right: 50vw; bottom: 50vh;}
+ 100%{left: 50vw;bottom: 0;}
+}
+
+/* ====== BOLL 8 ====== */
+
+
+#ball-buttom-right {
+
+  background: #12ca31;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  animation: moveBall-8;
+  animation-duration: 4s;
+
+
+}
+
+@keyframes moveBall-8 {
+  0% {
+    right: 0;
+    bottom: 0;
+
+  }
+
+  25% {
+    right:50vw;
+    bottom: 50vh;
+    background: #071063;
+
+  }
+  100%{right: 0; bottom: 0;}
+}

@@ -1,0 +1,42 @@
+:root {
+  --primary-color: #834444;
+  --font-size: 25px;
+}
+
+
+
+body {
+  height: 100%;
+  background: #f1ecec;
+  font-family: sans-serif;
+}
+
+.items {
+  width: 100px;
+
+  height: 100px;
+  color: #fff;
+  font-size: var(--font-size);
+  font-weight: bold;
+  background: var(--primary-color);
+  border-radius: 8px;
+  padding: 2px;
+  text-align: center;
+  /* flex-shrink: 1; */
+  flex-grow: 1;
+  /* flex-basis: 0px; */
+}
+
+.container {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+
+
+}
+
+

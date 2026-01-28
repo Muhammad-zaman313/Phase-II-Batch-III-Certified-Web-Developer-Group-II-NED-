@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <style>
+    @property --angle {
+      syntax: "<angle>";
+      initial-value: 0deg;
+      inherits: false;
+    }
+
+    .proCard {
+      margin: 30px auto;
+      padding: 2em;
+      width: 260px;
+      background: #040116f6;
+      color: #fff;
+      text-align: center;
+      border-radius: 50%;
+      position: relative;
+      font-family: Helvetica, sans-serif;
+      
+
+    }
+
+
+    .proCard::after,
+    .proCard::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-image: conic-gradient(from var(--angle), rgba(3, 3, 31, 0.199), #7af00c, #fff9f9);
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      z-index: -1;
+      padding: 3px;
+      border-radius: 50%;
+      animation: 1s spin linear infinite;
+
+
+    }
+
+    .proCard::before {
+      filter: blur(1.5rem);
+      opacity: 0.5;
+    }
+
+
+    @keyframes spin {
+      from {
+        --angle: 0deg;
+      }
+
+      to {
+        --angle: 360deg;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="card">
+    <h2>Animate Border</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum modi cumque laboriosam aliquam harum ex animi quas
+      sapiente dignissimos in illum deserunt id voluptatum dolorem magni, recusandae quo, similique repudiandae?</p>
+  </div>
+
+  <div class="proCard">
+    <h2>Animate Border</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum modi cumque laboriosam aliquam harum ex animi quas
+      sapiente dignissimos in illum deserunt id voluptatum dolorem magni, recusandae quo, similique repudiandae?</p>
+  </div>
+
+</body>
+
+</html>
